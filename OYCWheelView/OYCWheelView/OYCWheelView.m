@@ -84,7 +84,6 @@
         [button setTitle:self.titles[i] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         button.titleLabel.textAlignment = NSTextAlignmentCenter;
-//        [button.titleLabel sizeToFit];
         [self.buttons addObject:button];
         [self addSubview: button];
     }

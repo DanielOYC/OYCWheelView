@@ -8,13 +8,24 @@
 
 #import "OYCVerticalButton.h"
 
+@interface OYCVerticalButton()
+{
+    CGFloat _width;
+    NSInteger _flag;
+}
+@end
+
 @implementation OYCVerticalButton
 
 -(void)layoutSubviews{
     [super layoutSubviews];
     
-    self.imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.width);
-    self.titleLabel.frame = CGRectMake(0, self.frame.size.width, self.frame.size.width, 20);
+    if (_flag == 0) {
+        _width = self.frame.size.width;
+        _flag = 1;
+    }
+    self.imageView.frame = CGRectMake(0, 0, _width, _width);
+    self.titleLabel.frame = CGRectMake(0, _width, _width, 20);
 }
 
 @end
