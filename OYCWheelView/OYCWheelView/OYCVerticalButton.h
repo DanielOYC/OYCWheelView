@@ -10,7 +10,8 @@
 
 @interface OYCVerticalButton : UIButton
 
-@property(nonatomic,assign)CGFloat lastX;
-@property(nonatomic,assign)CGFloat lastY;
+//存储影藏前的中心点X,Y
+@property(nonatomic,assign)CGFloat lastCenterX;
+@property(nonatomic,assign)CGFloat lastCenterY;
 
 @end

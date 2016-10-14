@@ -22,7 +22,6 @@
  *  垂直按钮的图片数据
  */
 @property(nonatomic,strong)NSMutableArray *imagesNameArray;
-@property(nonatomic,strong)OYCWheelView *wheelView;
 
 @end
 
@@ -54,7 +53,6 @@
  */
 -(void)setupWheelView{
     OYCWheelView *wheelView = [[OYCWheelView alloc]initWithFrame:CGRectMake(0, 0, OYCScreenW, OYCScreenW)];
-    self.wheelView = wheelView;
     wheelView.titles = self.titlesArray;
     wheelView.images = self.imagesNameArray;
     wheelView.center = CGPointMake(OYCScreenW / 2, OYCScreenH / 2);
